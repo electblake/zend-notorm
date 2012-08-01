@@ -17,19 +17,11 @@ In your application.ini add this:
     notorm.password = "<Database Password>"
     
 
-Download the NotORM Library from <a href="http://www.notorm.com/" target="_blank">NotORM.com</a>
+Get the NotORM Library. I've included a .gitmodules in the repo so you can download the NotORM latest code using git's submodule feature with:
 
-Place the NotORM library so that it looks like this:
-
-    /library/NotORM/NotORM.php
-    /library/NotORM/NotORM/Cache.php
-    /library/NotORM/NotORM/Literal.php
-    /library/NotORM/NotORM/MultiResult.php
-    /library/NotORM/NotORM/Result.php
-    /library/NotORM/NotORM/Row.php
-    /library/NotORM/NotORM/Structure.php
+    git submodule update --init
     
-(note that the files of /library/NotORM/NotORM/* may have changed, but at the time of this writing (Aug 2012), that's how it is)
+This will clone the latest code into your own repo - alternatively you can always just download the library yourself at <a href="http://www.notorm.com/" target="_blank">NotORM.com</a>
 
 To utilize in any model simply extend Application_Model_NotORM and use the NotORM class using a method like getData()
 

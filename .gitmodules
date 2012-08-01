@@ -1,0 +1,3 @@
+[submodule "library/NotORM"]
+	path = library/NotORM
+	url = https://github.com/vrana/notorm
