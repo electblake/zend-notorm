@@ -1,0 +1,9 @@
+Download the NotORM library to this folder (/library/NotORM/) - so that this folder looks like:
+
+/library/NotORM/NotORM.php
+/library/NotORM/NotORM/Cache.php
+/library/NotORM/NotORM/Literal.php
+/library/NotORM/NotORM/MultiResult.php
+/library/NotORM/NotORM/..
+
+- note that the files may change but the core /library/NotORM/NotORM folder should mirror: https://github.com/vrana/notorm/tree/master/NotORM
