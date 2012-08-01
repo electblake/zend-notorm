@@ -22,16 +22,16 @@ Download the NotORM Library from <a href="http://www.notorm.com/" target="_blank
 Place the NotORM library so that it looks like this:
 
     /library/NotORM/NotORM.php
-    /library/NotORM/Cache.php
-    /library/NotORM/Literal.php
-    /library/NotORM/MultiResult.php
-    /library/NotORM/Result.php
-    /library/NotORM/Row.php
-    /library/NotORM/Structure.php
+    /library/NotORM/NotORM/Cache.php
+    /library/NotORM/NotORM/Literal.php
+    /library/NotORM/NotORM/MultiResult.php
+    /library/NotORM/NotORM/Result.php
+    /library/NotORM/NotORM/Row.php
+    /library/NotORM/NotORM/Structure.php
     
-(note that the file structure may have changed, but at the time of this writing (Aug 2012), that's how it is)
+(note that the files of /library/NotORM/NotORM/* may have changed, but at the time of this writing (Aug 2012), that's how it is)
 
-To utilize in any model define your Model like and use the NotORM class using a method like getData()
+To utilize in any model simply extend Application_Model_NotORM and use the NotORM class using a method like getData()
 
     Application_Model_Something extends Application_Model_NotORM {
         public function __construct() {
